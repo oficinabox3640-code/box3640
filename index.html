@@ -1,76 +1,220 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BOX3640 - Oficina de Motas</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #111;
-      color: white;
-    }
+<title>BOX3640 - Oficina de Motas</title>
 
-    header {
-      text-align: center;
-      padding: 50px 20px;
-      background: #000;
-    }
+<style>
 
-    h1 {
-      color: #e30613;
-      font-size: 3rem;
-      margin: 0;
-    }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-    p {
-      font-size: 1.2rem;
-    }
+body{
+    font-family:Arial,sans-serif;
+    background:#111;
+    color:white;
+}
 
-    section {
-      padding: 40px 20px;
-      text-align: center;
-    }
+/* HERO */
 
-    .card {
-      background: #1c1c1c;
-      margin: 10px;
-      padding: 20px;
-      border-radius: 10px;
-      display: inline-block;
-      width: 250px;
-    }
+.hero{
+    height:100vh;
+    background:url("mota.jpg") center center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    position:relative;
+}
 
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 20px;
-      background: #e30613;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-    }
-  </style>
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.6);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+}
+
+.hero h1{
+    font-size:4rem;
+    color:#e30613;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:1.3rem;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:14px 25px;
+    background:#e30613;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#ff1d2d;
+}
+
+/* SECÇÕES */
+
+section{
+    padding:70px 20px;
+    text-align:center;
+}
+
+h2{
+    margin-bottom:40px;
+    color:#e30613;
+}
+
+/* SERVIÇOS */
+
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.card{
+    background:#1d1d1d;
+    width:250px;
+    padding:30px;
+    border-radius:12px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px rgba(227,6,19,0.5);
+}
+
+/* CONTACTOS */
+
+.contactos{
+    background:#000;
+}
+
+.contactos p{
+    margin:10px 0;
+}
+
+/* FOOTER */
+
+footer{
+    background:#080808;
+    text-align:center;
+    padding:20px;
+    color:#888;
+}
+
+</style>
 </head>
 
 <body>
 
-<header>
-  <h1>BOX3640</h1>
-  <p>Oficina de Motas - Reparação e Manutenção</p>
-  <a class="btn" href="#servicos">Ver Serviços</a>
+<!-- HERO -->
+
+<header class="hero">
+
+<div class="hero-content">
+    <h1>BOX3640</h1>
+
+    <p>Reparação • Revisões • Diagnóstico • Performance</p>
+
+    <a href="#servicos" class="btn">
+        Ver Serviços
+    </a>
+
+    <a href="https://wa.me/351912345678" class="btn">
+        Agendar Serviço
+    </a>
+</div>
+
 </header>
 
-<section id="servicos">
-  <h2>Serviços</h2>
+<!-- SERVIÇOS -->
 
-  <div class="card">Reparação de Motas</div>
-  <div class="card">Revisões</div>
-  <div class="card">Diagnóstico</div>
-  <div class="card">Performance</div>
+<section id="servicos">
+
+<h2>Os Nossos Serviços</h2>
+
+<div class="cards">
+
+<div class="card">
+    🏍️<br><br>
+    Reparação de Motas
+</div>
+
+<div class="card">
+    🔧<br><br>
+    Revisões
+</div>
+
+<div class="card">
+    💻<br><br>
+    Diagnóstico Eletrónico
+</div>
+
+<div class="card">
+    ⚡<br><br>
+    Performance
+</div>
+
+</div>
+
 </section>
+
+<!-- SOBRE -->
+
+<section>
+
+<h2>Sobre Nós</h2>
+
+<p>
+Na BOX3640 dedicamo-nos à manutenção, reparação e preparação
+de motas, garantindo qualidade, confiança e atenção ao detalhe.
+</p>
+
+</section>
+
+<!-- CONTACTOS -->
+
+<section class="contactos">
+
+<h2>Contactos</h2>
+
+<p>📞 +351 912 345 678</p>
+
+<p>📧 contacto@box3640.pt</p>
+
+<p>📍 Lisboa, Portugal</p>
+
+<a href="mailto:contacto@box3640.pt" class="btn">
+Enviar Email
+</a>
+
+</section>
+
+<footer>
+
+© 2026 BOX3640 - Todos os direitos reservados
+
+</footer>
 
 </body>
 </html>
