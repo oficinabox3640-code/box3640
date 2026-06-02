@@ -1,238 +1,116 @@
+
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX3640 - Oficina Especializada em Motas</title>
 
-<title>BOX3640 - Oficina de Motas</title>
+    <link rel="stylesheet" href="style.css">
 
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:Arial,sans-serif;
-    background:#111;
-    color:white;
-}
-
-/* HERO */
-
-.hero{
-    height:100vh;
-    background:url("mota.jpg") center center/cover no-repeat;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    position:relative;
-}
-
-.hero::before{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,0.6);
-}
-
-.hero-content{
-    position:relative;
-    z-index:2;
-}
-
-.hero h1{
-    font-size:4rem;
-    color:#e30613;
-}
-
-.hero p{
-    margin-top:15px;
-    font-size:1.3rem;
-}
-
-.btn{
-    display:inline-block;
-    margin-top:25px;
-    padding:14px 25px;
-    background:#e30613;
-    color:white;
-    text-decoration:none;
-    border-radius:8px;
-    transition:0.3s;
-}
-
-.btn:hover{
-    background:#ff1d2d;
-}
-
-/* SECÇÕES */
-
-section{
-    padding:70px 20px;
-    text-align:center;
-}
-
-h2{
-    margin-bottom:40px;
-    color:#e30613;
-}
-
-/* SERVIÇOS */
-
-.cards{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:20px;
-}
-
-.card{
-    background:#1d1d1d;
-    width:250px;
-    padding:30px;
-    border-radius:12px;
-    transition:0.3s;
-}
-
-.card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 0 20px rgba(227,6,19,0.5);
-}
-
-/* CONTACTOS */
-
-.contactos{
-    background:#000;
-}
-
-.contactos p{
-    margin:10px 0;
-}
-
-/* FOOTER */
-
-footer{
-    background:#080808;
-    text-align:center;
-    padding:20px;
-    color:#888;
-}
-
-</style>
+    <meta name="description" content="BOX3640 - Oficina especializada em motas, manutenção, reparação e aventura sobre duas rodas.">
 </head>
 
 <body>
 
-<!-- HERO -->
-
-<header class="hero">
-
-<div class="hero-content">
-    <h1>BOX3640</h1>
-
-    <p>Reparação • Revisões • Diagnóstico • Performance</p>
-
-    <a href="#servicos" class="btn">
-        Ver Serviços
-    </a>
-
-    <a href="https://wa.me/351912345678" class="btn">
-        Agendar Serviço
-    </a>
-</div>
-
+<header>
+    <div class="container">
+        <h1>BOX3640</h1>
+        <p>Offroad • Adventure • Speed</p>
+    </div>
 </header>
 
-<!-- SERVIÇOS -->
+<section class="hero">
+    <img src="logo-box3640.jpg" alt="BOX3640 Logo">
 
-<section id="servicos">
+    <h2>Oficina Especializada em Motas</h2>
 
-<h2>Os Nossos Serviços</h2>
+    <p>
+        Reparação, manutenção, preparação e personalização de motas.
+    </p>
 
-<div class="cards">
+    <div class="buttons">
+        <a href="tel:938620240" class="btn">📞 Ligar Agora</a>
 
-<div class="card">
-    🏍️<br><br>
-    Reparação de Motas
-</div>
-
-<div class="card">
-    🔧<br><br>
-    Revisões
-</div>
-
-<div class="card">
-    💻<br><br>
-    Diagnóstico Eletrónico
-</div>
-
-<div class="card">
-    ⚡<br><br>
-    Performance
-</div>
-
-</div>
-
+        <a href="https://wa.me/351938620240" class="btn whatsapp">
+            WhatsApp
+        </a>
+    </div>
 </section>
 
-<!-- SOBRE -->
+<section class="info">
+    <div class="container">
 
-<section>
+        <h2>Contactos</h2>
 
-<h2>Sobre Nós</h2>
+        <div class="card">
+            <p><strong>Telefone:</strong> 938 620 240</p>
+            <p><strong>Email:</strong> oficina.box3640@gmail.com</p>
+            <p><strong>Morada:</strong> Largo Aquilino Ribeiro nº 6</p>
+            <p>3640-250 Sernancelhe</p>
+        </div>
 
-<p>
-Na BOX3640 dedicamo-nos à manutenção, reparação e preparação
-de motas, garantindo qualidade, confiança e atenção ao detalhe.
-</p>
-
+    </div>
 </section>
 
-<!-- CONTACTOS -->
+<section class="services">
+    <div class="container">
 
-<section class="contactos">
+        <h2>Serviços</h2>
 
-<h
+        <div class="service-grid">
 
-    <!-- CONTACTOS -->
+            <div class="service">
+                <h3>🔧 Manutenção</h3>
+                <p>Revisões completas e manutenção preventiva.</p>
+            </div>
 
-<section class="contactos">
+            <div class="service">
+                <h3>🏍 Reparação</h3>
+                <p>Diagnóstico e reparação multimarca.</p>
+            </div>
 
-<h2>Contactos</h2>
+            <div class="service">
+                <h3>⚙️ Preparação Offroad</h3>
+                <p>Preparação de motas para trilhos e aventura.</p>
+            </div>
 
-<p>📞 938 620 240</p>
+            <div class="service">
+                <h3>🔥 Personalização</h3>
+                <p>Melhorias estéticas e de performance.</p>
+            </div>
 
-<p>📧 oficina.box3640@gmail.com</p>
+        </div>
 
-<p>
-📍 Largo Aquilino Ribeiro nº6<br>
-3640-250 Sernancelhe
-</p>
-
-<a href="tel:+351938620240" class="btn">
-Ligar Agora
-</a>
-
-<a href="mailto:oficina.box3640@gmail.com" class="btn">
-Enviar Email
-</a>
-
-<a href="https://wa.me/351938620240" class="btn">
-Agendar por WhatsApp
-</a>
-
+    </div>
 </section>
 
+<section class="gallery">
+    <div class="container">
+
+        <h2>Galeria</h2>
+
+        <p>
+            Adicione aqui fotografias dos trabalhos realizados.
+        </p>
+
+    </div>
+</section>
+
+<section class="map">
+    <h2>Localização</h2>
+
+    <iframe
+        src="https://maps.google.com/maps?q=Sernancelhe&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        allowfullscreen=""
+        loading="lazy">
+    </iframe>
 </section>
 
 <footer>
-
-© 2026 BOX3640 - Todos os direitos reservados
-
+    <p>
+        © 2025 BOX3640 - Todos os direitos reservados.
+    </p>
 </footer>
 
 </body>
