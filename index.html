@@ -1,1 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BOX3640 | Oficina de Motas e Bicicletas</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f0f0f;
+color:white;
+}
+
+header{
+position:fixed;
+width:100%;
+top:0;
+background:#111;
+border-bottom:2px solid #e30613;
+z-index:1000;
+}
+
+nav{
+max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 20px;
+}
+
+.logo{
+font-size:32px;
+font-weight:700;
+color:#e30613;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:
+linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.8)),
+url("https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=1600");
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:4rem;
+color:#e30613;
+}
+
+.hero p{
+font-size:1.2rem;
+max-width:700px;
+margin:20px auto;
+}
+
+.btn{
+display:inline-block;
+padding:15px 30px;
+background:#e30613;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-weight:600;
+margin:10px;
+}
+
+.whatsapp{
+background:#25D366;
+}
+
+section{
+padding:80px 20px;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+}
+
+.titulo{
+text-align:center;
+font-size:2.5rem;
+margin-bottom:50px;
+color:#e30613;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#181818;
+padding:30px;
+border-radius:15px;
+border:1px solid #222;
+}
+
+.card h3{
+color:#e30613;
+margin-bottom:15px;
+}
+
+.contactos{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.contacto{
+background:#181818;
+padding:30px;
+border-radius:15px;
+}
+
+.contacto a{
+color:white;
+text-decoration:none;
+}
+
+footer{
+background:#000;
+text-align:center;
+padding:25px;
+border-top:2px solid #e30613;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.5rem;
+}
+
+nav ul{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<div class="logo">BOX3640</div>
+
+<ul>
+<li><a href="#servicos">Serviços</a></li>
+<li><a href="#agendar">Agendar</a></li>
+<li><a href="#contactos">Contactos</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero">
+
+<h1>BOX3640</h1>
+
+<p>
+Reparação e manutenção de motas e bicicletas.
+Especialistas em suspensões, pneus, rodas e preparação para aventura.
+</p>
+
+<div>
+
+<a href="#agendar" class="btn">
+Agendar Revisão
+</a>
+
+<a href="https://wa.me/351938620240" class="btn whatsapp">
+WhatsApp
+</a>
+
+</div>
+
+</section>
+
+<section id="servicos">
+
+<div class="container">
+
+<h2 class="titulo">Serviços</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>🏍 Motas</h3>
+<p>Reparação e manutenção multimarca.</p>
+</div>
+
+<div class="card">
+<h3>🚴 Bicicletas</h3>
+<p>Manutenção e reparação completa.</p>
+</div>
+
+<div class="card">
+<h3>⚙️ Suspensões</h3>
+<p>Manutenção e reparação de suspensões.</p>
+</div>
+
+<div class="card">
+<h3>🛞 Pneus e Rodas</h3>
+<p>Troca de pneus e calibragem de rodas.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="agendar">
+
+<div class="container">
+
+<h2 class="titulo">Agendamento de Revisão</h2>
+
+<div style="text-align:center">
+
+<a href="https://wa.me/351938620240?text=Olá,%20pretendo%20agendar%20uma%20revisão." class="btn">
+Agendar Agora
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contactos">
+
+<div class="container">
+
+<h2 class="titulo">Contactos</h2>
+
+<div class="contactos">
+
+<div class="contacto">
+
+<p><strong>📞 Telemóvel</strong></p>
+<p>+351 933 820 240</p>
+
+<br>
+
+<p><strong>✉ Email</strong></p>
+<p>oficina.box3640@gmail.com</p>
+
+<br>
+
+<p><strong>📍 Morada</strong></p>
+<p>
+Largo Aquilino Ribeiro nº 6<br>
+3640-250 Sernancelhe
+</p>
+
+</div>
+
+<div class="contacto">
+
+<p>
+<strong>Facebook</strong><br>
+<a href="https://www.facebook.com/share/1Fzmiy3FsU/?mibextid=wwXIfr">
+Abrir Facebook
+</a>
+</p>
+
+<br>
+
+<p>
+<strong>Instagram</strong><br>
+BOX3640
+</p>
+
+<br>
+
+<p>
+<strong>WhatsApp</strong><br>
+<a href="https://wa.me/351938620240">
+Enviar Mensagem
+</a>
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2025 BOX3640 - Oficina de Motas e Bicicletas
+</footer>
+
+</body>
+</html>
